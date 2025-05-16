@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Não pod's - Produtos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Introdução com vídeo -->
+  <div id="smoke-overlay">
+    <video autoplay muted loop playsinline id="intro-video">
+      <source src="video1.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeos em HTML5.
+    </video>
+    <div class="intro-logo">Nãopod's</div>
+    <audio id="intro-audio" src="intro.mp3"></audio>
+  </div>
+
+  <header>
+    <div class="logo-container">
+      <img src="NÃO POD'S.gif" alt="Nãopod's Logo" class="logo-img" />
+    </div>
+  </header>
+
+  <section class="description">
+    <p>Vendemos pods e eletrônicos originais, revisados e prontos para uso. Produtos com garantia, direto pelo WhatsApp.</p>
+  </section>
+
+  <!-- Botões de filtro -->
+  <section class="filter-buttons">
+    <button onclick="filterProducts('all')">Todos</button>
+    <button onclick="filterProducts('ignite')">Ignite</button>
+    <button onclick="filterProducts('lostmary')">Lost Mary</button>
+    <button onclick="filterProducts('lifepod')">Life Pod</button>
+  </section>
+
+  <!-- Cards dos produtos -->
+  <section class="gallery">
+    <!-- Ignite V15000 -->
+  <div class="product-card" data-category="ignite" onclick="flipCard(event, this)" tabindex="0">
+  <div class="card-front">
+    <div class="promo-badge">Promoção</div> <!-- selo promocional -->
+    <img src="ignite-v15000.jpg" alt="Ignite V15000" />
+    <h3>Ignite V15000</h3>
+    <p>R$ 130,00</p>
+  </div>
+  <div class="card-back">
+    <h3>Detalhes</h3>
+    <ul>
+      <li>Quantidade: 10 unidades</li>
+      <li>Status: Novo</li>
+      <li>Carregamento: Rápido</li>
+      <li>Bateria: Até 8 horas</li>
+    </ul>
+  </div>
+</div>
+
+    <!-- Lost Mary MO20000 Pro -->
+    <div class="product-card" data-category="lostmary" onclick="flipCard(event, this)" tabindex="0">
+      <div class="card-front">
+        <img src="lost-mary.jpg" alt="Lost Mary MO20000 Pro" />
+        <h3>Lost Mary MO20000 Pro</h3>
+        <p>R$ 150,00</p>
+      </div>
+      <div class="card-back">
+        <h3>Detalhes</h3>
+        <ul>
+          <li>Descartável</li>
+          <li>Puffs: 20.000</li>
+          <li>Design compacto</li>
+          <li>Alta durabilidade</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Life Pod Eco 5000 -->
+    <div class="product-card" data-category="lifepod" onclick="flipCard(event, this)" tabindex="0">
+      <div class="card-front">
+        <img src="life-pod-eco.jpg" alt="Life Pod Eco 5000" />
+        <h3>Life Pod Eco 5000</h3>
+        <p>R$ 90,00</p>
+      </div>
+      <div class="card-back">
+        <h3>Detalhes</h3>
+        <ul>
+          <li>Refil (Cartucho)</li>
+          <li>Puffs: 5.000</li>
+          <li>Produto ecológico</li>
+          <li>Compatível com Eco Pod</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Life Pod Eco 8000 -->
+    <div class="product-card" data-category="lifepod" onclick="flipCard(event, this)" tabindex="0">
+      <div class="card-front">
+        <img src="life-pod-eco.jpg" alt="Life Pod Eco 8000" />
+        <h3>Life Pod Eco 8000</h3>
+        <p>R$ 110,00</p>
+      </div>
+      <div class="card-back">
+        <h3>Detalhes</h3>
+        <ul>
+          <li>Refil (Cartucho)</li>
+          <li>Puffs: 8.000</li>
+          <li>Produto ecológico</li>
+          <li>Compatível com Eco Pod</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Botões sociais -->
+  <div class="social-buttons">
+    <a class="whatsapp-btn" href="https://wa.me/556992706434?text=Olá%2C+tenho+interesse+em+um+produto+da+Nãopod's" target="_blank">
+      <img src="whatsapp-icon.svg" alt="WhatsApp" /> Comprar via WhatsApp
+    </a>
+    <a class="instagram-btn" href="https://www.instagram.com/naopods_/" target="_blank">
+      <img src="instagram-icon.svg" alt="Instagram" /> Seguir no Instagram
+    </a>
+  </div>
+
+  <footer>
+    Todos os direitos reservados © Nãopod's
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
