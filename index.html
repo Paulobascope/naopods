@@ -30,85 +30,253 @@
   <!-- Botões de filtro -->
   <section class="filter-buttons">
     <button onclick="filterProducts('all')">Todos</button>
+    <button onclick="filterProducts('black-sheep')">Black Sheep</button>
     <button onclick="filterProducts('ignite')">Ignite</button>
-    <button onclick="filterProducts('lostmary')">Lost Mary</button>
-    <button onclick="filterProducts('lifepod')">Life Pod</button>
+    <button onclick="filterProducts('chilly')">Chilly</button>
+    <button onclick="filterProducts('life')">Life</button>
+     <button onclick="filterProducts('oxbar')">Oxbar</button>
+     <button onclick="filterProducts('refil')">Refil</button>
+
   </section>
 
   <!-- Cards dos produtos -->
   <section class="gallery">
-    <!-- Ignite V15000 -->
-  <div class="product-card" data-category="ignite" onclick="flipCard(event, this)" tabindex="0">
+  <!-- BLACK SHEEP 20K -->
+<div class="product-card" data-category="black-sheep" onclick="flipCard(event, this)" tabindex="0">
   <div class="card-front">
-    <div class="promo-badge">Promoção</div> <!-- selo promocional -->
-    <img src="ignite-v15000.jpg" alt="Ignite V15000" />
-    <h3>Ignite V15000</h3>
-    <p>R$ 130,00</p>
+    <div class="promo-badge">Promoção</div>
+    <img src="Black Sheep 20k.webp" alt="Black Sheep 20K" />
+    <h3>BLACK SHEEP 20K</h3>
+    <p>R$ 200</p>
   </div>
   <div class="card-back">
     <h3>Detalhes</h3>
     <ul>
-      <li>Quantidade: 10 unidades</li>
-      <li>Status: Novo</li>
-      <li>Carregamento: Rápido</li>
-      <li>Bateria: Até 8 horas</li>
+      <li>20.000 puffs</li>
+      <li>Sabor intenso e duradouro</li>
+      <li>Alta performance</li>
+      <li>Autonomia prolongada</li>
     </ul>
   </div>
 </div>
 
-    <!-- Lost Mary MO20000 Pro -->
-    <div class="product-card" data-category="lostmary" onclick="flipCard(event, this)" tabindex="0">
-      <div class="card-front">
-        <img src="lost-mary.jpg" alt="Lost Mary MO20000 Pro" />
-        <h3>Lost Mary MO20000 Pro</h3>
-        <p>R$ 150,00</p>
-      </div>
-      <div class="card-back">
-        <h3>Detalhes</h3>
-        <ul>
-          <li>Descartável</li>
-          <li>Puffs: 20.000</li>
-          <li>Design compacto</li>
-          <li>Alta durabilidade</li>
-        </ul>
-      </div>
-    </div>
+<!-- CHILLY BEATS -->
+<div class="product-card" data-category="chilly" onclick="flipCard(event, this)" tabindex="0">
+  <div class="card-front">
+    <img src="chilly beats.jpg" alt="Chilly Beats" />
+    <h3>CHILLY BEATS</h3>
+    <p>R$ 120</p>
+  </div>
+  <div class="card-back">
+    <h3>Detalhes</h3>
+    <ul>
+      <li>Sabor refrescante</li>
+      <li>Design moderno</li>
+      <li>Ideal para uso diário</li>
+      <li>Ótimo custo-benefício</li>
+    </ul>
+  </div>
+</div>
 
-    <!-- Life Pod Eco 5000 -->
-    <div class="product-card" data-category="lifepod" onclick="flipCard(event, this)" tabindex="0">
-      <div class="card-front">
-        <img src="life-pod-eco.jpg" alt="Life Pod Eco 5000" />
-        <h3>Life Pod Eco 5000</h3>
-        <p>R$ 90,00</p>
-      </div>
-      <div class="card-back">
-        <h3>Detalhes</h3>
-        <ul>
-          <li>Refil (Cartucho)</li>
-          <li>Puffs: 5.000</li>
-          <li>Produto ecológico</li>
-          <li>Compatível com Eco Pod</li>
-        </ul>
-      </div>
-    </div>
+<!-- IGNITE V80K -->
+<div class="product-card" data-category="ignite" onclick="flipCard(event, this)" tabindex="0">
+  <div class="card-front">
+    <img src="ignite v80.jpg" alt="Ignite V80K" />
+    <h3>IGNITE V80K</h3>
+    <p>R$ 140</p>
+  </div>
+  <div class="card-back">
+    <h3>Detalhes</h3>
+    <ul>
+      <li>Alta durabilidade</li>
+      <li>Sabores marcantes</li>
+      <li>Design premium</li>
+      <li>Fácil de usar</li>
+    </ul>
+  </div>
+</div>
 
-    <!-- Life Pod Eco 8000 -->
-    <div class="product-card" data-category="lifepod" onclick="flipCard(event, this)" tabindex="0">
-      <div class="card-front">
-        <img src="life-pod-eco.jpg" alt="Life Pod Eco 8000" />
-        <h3>Life Pod Eco 8000</h3>
-        <p>R$ 110,00</p>
-      </div>
-      <div class="card-back">
-        <h3>Detalhes</h3>
-        <ul>
-          <li>Refil (Cartucho)</li>
-          <li>Puffs: 8.000</li>
-          <li>Produto ecológico</li>
-          <li>Compatível com Eco Pod</li>
-        </ul>
-      </div>
-    </div>
+<!-- IGNITE V12K -->
+<div class="product-card" data-category="ignite" onclick="flipCard(event, this)" tabindex="0">
+  <div class="card-front">
+    <img src="ignite v12k.jpg" alt="Ignite V12K" />
+    <h3>IGNITE V12K</h3>
+    <p>R$ 155</p>
+  </div>
+  <div class="card-back">
+    <h3>Detalhes</h3>
+    <ul>
+      <li>12.000 puffs</li>
+      <li>Vapor consistente</li>
+      <li>Boa autonomia</li>
+      <li>Sabor encorpado</li>
+    </ul>
+  </div>
+</div>
+
+<!-- IGNITE V15K -->
+<div class="product-card" data-category="ignite" onclick="flipCard(event, this)" tabindex="0">
+  <div class="card-front">
+    <img src="ignite v15.jpg" alt="Ignite V15K" />
+    <h3>IGNITE V15K</h3>
+    <p>R$ 160</p>
+  </div>
+  <div class="card-back">
+    <h3>Detalhes</h3>
+    <ul>
+      <li>15.000 puffs</li>
+      <li>Alta performance</li>
+      <li>Ideal para uso intenso</li>
+      <li>Design moderno</li>
+    </ul>
+  </div>
+</div>
+
+<!-- IGNITE V25K -->
+<div class="product-card" data-category="ignite" onclick="flipCard(event, this)" tabindex="0">
+  <div class="card-front">
+    <div class="promo-badge">Promoção</div>
+    <img src="ignite 25k.jpg" alt="Ignite V25K" />
+    <h3>IGNITE V25K</h3>
+    <p>R$ 200</p>
+  </div>
+  <div class="card-back">
+    <h3>Detalhes</h3>
+    <ul>
+      <li>25.000 puffs</li>
+      <li>Longa duração</li>
+      <li>Sabor intenso</li>
+      <li>Bateria de alta capacidade</li>
+    </ul>
+  </div>
+</div>
+
+<!-- IGNITE KIT P100 -->
+<div class="product-card" data-category="ignite" onclick="flipCard(event, this)" tabindex="0">
+  <div class="card-front">
+    <img src="IGNITE KIT P100.webp" alt="Ignite Kit P100" />
+    <h3>IGNITE KIT P100</h3>
+    <p>R$ 180</p>
+  </div>
+  <div class="card-back">
+    <h3>Detalhes</h3>
+    <ul>
+      <li>Kit com dispositivo + refil</li>
+      <li>Recarregável</li>
+      <li>Design elegante</li>
+      <li>Fácil substituição de refil</li>
+    </ul>
+  </div>
+</div>
+
+<!-- IGNITE P100 REFIL -->
+<div class="product-card" data-category="refil" onclick="flipCard(event, this)" tabindex="0">
+  <div class="card-front">
+    <img src="IGNITE P100 REFIL.webp" alt="Refil Ignite P100" />
+    <h3>IGNITE P100 REFIL</h3>
+    <p>R$ 130</p>
+  </div>
+  <div class="card-back">
+    <h3>Detalhes</h3>
+    <ul>
+      <li>Compatível com KIT P100</li>
+      <li>Sabor premium</li>
+      <li>Fácil instalação</li>
+      <li>Boa durabilidade</li>
+    </ul>
+  </div>
+</div>
+
+<!-- LIFE 8K KIT -->
+<div class="product-card" data-category="life" onclick="flipCard(event, this)" tabindex="0">
+  <div class="card-front">
+    <img src="LIFE 8K KIT.jpg" alt="Life" />
+    <h3>LIFE 8K KIT</h3>
+    <p>R$ 150</p>
+  </div>
+  <div class="card-back">
+    <h3>Detalhes</h3>
+    <ul>
+      <li>8.000 puffs</li> 
+      <li>Design moderno</li>
+      <li>Vapor suave</li>
+      <li>Ideal para iniciantes</li>
+    </ul>
+  </div>
+</div>
+
+<!-- LIFE 8K REFIL -->
+<div class="product-card" data-category="refil" onclick="flipCard(event, this)" tabindex="0">
+  <div class="card-front">
+    <img src="LIFE 8K REFIL.jpg" alt="Life 8K Refil" />
+    <h3>LIFE 8K REFIL</h3>
+    <p>R$ 115</p>
+  </div>
+  <div class="card-back">
+    <h3>Detalhes</h3>
+    <ul>
+      <li>Para uso com Life 8K Kit</li>
+      <li>Sabores variados</li>
+      <li>Fácil de trocar</li>
+      <li>Refil econômico</li>
+    </ul>
+  </div>
+</div>
+
+<!-- LIFE 10K KIT -->
+<div class="product-card" data-category="life" onclick="flipCard(event, this)" tabindex="0">
+  <div class="card-front">
+    <img src="LIFE 10K KIT.jpg" alt="Life 10K Kit" />
+    <h3>LIFE 10K KIT</h3>
+    <p>R$ 180</p>
+  </div>
+  <div class="card-back">
+    <h3>Detalhes</h3>
+    <ul>
+      <li>10.000 puffs</li>
+      <li>Ótimo custo-benefício</li>
+      <li>Sabor encorpado</li>
+      <li>Longa duração</li>
+    </ul>
+  </div>
+</div>
+
+<!-- LIFE 10K REFIL -->
+<div class="product-card" data-category="refil" onclick="flipCard(event, this)" tabindex="0">
+  <div class="card-front">
+    <img src="LIFE 10K REFI.png" alt="Life 10K Refil" />
+    <h3>LIFE 10K REFIL</h3>
+    <p>R$ 125</p>
+  </div>
+  <div class="card-back">
+    <h3>Detalhes</h3>
+    <ul>
+      <li>Refil compatível com Kit 10K</li>
+      <li>Sabores marcantes</li>
+      <li>Troca rápida</li>
+      <li>Mais economia</li>
+    </ul>
+  </div>
+</div>
+
+<!-- OXBAR G9,5 -->
+<div class="product-card" data-category="oxbar" onclick="flipCard(event, this)" tabindex="0">
+  <div class="card-front">
+    <img src="OXBAR G9,5.jpg" alt="OXBAR G9,5" />
+    <h3>OXBAR G9,5</h3>
+    <p>R$ 130</p>
+  </div>
+  <div class="card-back">
+    <h3>Detalhes</h3>
+    <ul>
+      <li>9.500 puffs</li>
+      <li>Compacto e potente</li>
+      <li>Fácil transporte</li>
+      <li>Design discreto</li>
+    </ul>
+  </div>
+</div>
+
   </section>
 
   <!-- Botões sociais -->
